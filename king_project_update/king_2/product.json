@@ -1,0 +1,72 @@
+[
+    {
+        "product_name":"Nuggets",
+        "product_description":"This is our Nuggest blond with a smooth finish and chocolate understones",
+        "product_price":"56",
+        "product_id":"1005",
+        "product_image":"./images/img5.jpg"
+    },
+    {
+        "product_name":"Chicken",
+        "product_description":"This is our Chicken blond with a smooth finish and chocolate understones",
+        "product_price":"89",
+        "product_id":"1002",
+        "product_image":"./images/img2.png"
+    },
+    {
+        "product_name":"Crispy fillet",
+        "product_description":"This is our Crispy blond with a smooth finish and chocolate understones",
+        "product_price":"46",
+        "product_id":"1003",
+        "product_image":"./images/img1.jpg"
+    },
+    {
+        "product_name":"Handcrafted chicken",
+        "product_description":"This is our handcrafted blond with a smooth finish and chocolate understones",
+        "product_price":"67",
+        "product_id":"1004",
+        "product_image":"./images/img3.jpg"
+    },
+    {
+        "product_name":"Chuggets",
+        "product_description":"This is our Chuggets blond with a smooth finish and chocolate understones",
+        "product_price":"67",
+        "product_id":"1004",
+        "product_image":"./images/img5.jpg"
+    },
+    {
+        "product_name":"Coffee",
+        "product_description":"This is our Desserts blond with a smooth finish and chocolate understones",
+        "product_price":"20",
+        "product_id":"1017",
+        "product_image":"./images/coffee.png"
+    },
+    {
+        "product_name":"Pasta",
+        "product_description":"This is our Pasta blond with a smooth finish and chocolate understones",
+        "product_price":"157",
+        "product_id":"1022",
+        "product_image":"./images/img5.jpg"
+    },
+    {
+        "product_name":"Simple Pasta",
+        "product_description":"This is our Simple Pasta blond with a smooth finish and chocolate understones",
+        "product_price":"167",
+        "product_id":"1015",
+        "product_image":"./images/img6.jpg"
+    },
+    {
+        "product_name":"Spicy",
+        "product_description":"This is our Spicy blond with a smooth finish and chocolate understones",
+        "product_price":"90",
+        "product_id":"1009",
+        "product_image":"./images/img7.jpg"
+    },
+    {
+        "product_name":"Spicy Chips",
+        "product_description":"This is our Chips blond with a smooth finish and chocolate understones",
+        "product_price":"75",
+        "product_id":"1018",
+        "product_image":"./images/img8.jpg"
+    }
+]

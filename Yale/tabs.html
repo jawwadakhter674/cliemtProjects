@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Tailwind -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Aos -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Tab View- Yale School of Art</title>
+
+<style>
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box,
+}
+.tab_container{
+    
+    width: 70%;
+    margin: 30px auto;
+   
+    border: 1px solid rgb(243, 243, 243);
+    box-shadow: 10px 11px 5px 0px rgba(207,207,207,0.75);
+-webkit-box-shadow: 10px 11px 5px 0px rgba(207,207,207,0.75);
+-moz-box-shadow: 10px 11px 5px 0px rgba(207,207,207,0.75);
+   
+}
+.tablink {
+  background-color: rgb(231, 231, 231);
+  color: #333;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  transition: 0.5s ease-in;
+}
+
+.tablink:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: rgb(5, 5, 5);
+
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+.tabcontent h1{
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+
+ <!-- Top Bar -->
+ <nav class="bg-primary py-2 text-white">
+  <article class="container flex flex-wrap">
+      <aside>
+          <p class="text-sm"><i class="fas fa-map-marker mr-1"></i> 1156 Chapel Street, POB 208339</p>
+      </aside>
+      <aside class="ml-auto">
+          <p class="text-sm">Since 1869</p>
+      </aside>
+  </article>
+</nav>
+
+<!-- Header -->
+<header>
+  <article class="text-center py-8">
+      <h1 class="uppercase text-5xl font-bold">YALE SCHOOL OF ART</h1>
+  </article>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <article class="container-fluid">
+        <button class="navbar-toggler mx-auto text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About the school</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="apply.html">Apply to the school</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="public-events.html">Public Events</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="tabs.html">Tab View</a>
+              </li>
+          </ul>
+        </div>
+      </article>
+    </nav>
+</header>
+
+
+
+    <div class="tab_container">
+
+        
+        <button class="tablink" onclick="openPage('tab1', this, '#F16334')" id="defaultOpen">Tab1</button>
+        <button class="tablink" onclick="openPage('tab2', this, '#F16334')" >Tab2</button>
+        <button class="tablink" onclick="openPage('tab3', this, '#F16334')">Tab3</button>
+        <button class="tablink" onclick="openPage('tab4', this, '#F16334')">Tab4</button>
+        
+        <div id="tab1" class="tabcontent" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h1>Tab1</h1>
+            <p  data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, sed expedita. Perferendis doloribus sequi corporis. Cupiditate officiis omnis perspiciatis odio voluptates molestias dolor. Eaque numquam facilis hic iste dolor quod.</p>
+        </div>
+        
+        <div id="tab2" class="tabcontent" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h1>Tab2</h1>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, sed expedita. Perferendis doloribus sequi corporis. Cupiditate officiis omnis perspiciatis odio voluptates molestias dolor. Eaque numquam facilis hic iste dolor quod.</p> 
+        </div>
+        
+        <div id="tab3" class="tabcontent" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h1>Tab3</h1>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, sed expedita. Perferendis doloribus sequi corporis. Cupiditate officiis omnis perspiciatis odio voluptates molestias dolor. Eaque numquam facilis hic iste dolor quod.</p>
+        </div>
+        
+        <div id="tab4" class="tabcontent" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h1>Tab4</h1>
+            <p data-aos="fade-right">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, sed expedita. Perferendis doloribus sequi corporis. Cupiditate officiis omnis perspiciatis odio voluptates molestias dolor. Eaque numquam facilis hic iste dolor quod.</p>
+        </div>
+        
+    </div>
+
+
+
+<script>
+
+
+
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+   
+</body>
+</html> 

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+   <div class="main_class_page1">
+
+       
+       <div class="container_page1">
+           <h2 class="text">How would you like to learn today? </h1>
+           <!-- tab container -->
+           <div class="tab_container">
+               
+                <!-- tabs -->
+                <div class="tab_page1">
+                    <div class="tablinks" onclick="openTab(event, 'workshop', 'arrow1')" id="defaultOpen">
+                        <div class="circle_icon">
+                            <img src="./images/calendar_today.png" alt="">
+                        </div>
+
+                        <div class="content">
+                            <h3>Attend A WorkShop</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                      
+                        <span id="arrow1" class="arrow "></span>
+                    </div>
+                    
+                    <div class="tablinks" onclick="openTab(event, 'learnOnline', 'arrow2')">
+                        <div class="circle_icon">
+                            <img src="./images/computer.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Learn Online</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                        
+                        <span id="arrow2" class=" arrow"></span>
+                    </div>
+                    
+                    <div class="tablinks" onclick="openTab(event, 'askExpert', 'arrow3')">
+                        <div class="circle_icon">
+                            <img src="./images/headset_mic.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Ask The Expert</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                        
+                        <span id="arrow3" class=" arrow "></span>
+                    </div>
+                    
+                    <div class="tablinks" onclick="openTab(event, 'game', 'arrow4')">
+                        <div class="circle_icon">
+                            <img src="./images/extension.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>Games</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                        </div>
+                        
+                        
+                        <span id="arrow4" class="arrow"></span>
+                    </div>
+                </div>
+                
+                
+                <!-- sidebar content -->
+                
+                <!-- WorkShop Content -->
+                
+                <div id="workshop" class="tabcontent workshop">
+                    <div class="card_container_page1">
+                        
+                        <div class="card_workshop">
+                            <h1>Live WorkShop</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur delectus
+                                magnam facilis. Aliquid, recusandae animi nihil </p>
+                                <i class="fas fa-chevron-right"></i><a href="#">Register for a workshop</a>
+                            </div>
+                            <div class="card_workshop">
+                                <h1>Retirement Seminars</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur delectus
+                                    magnam facilis. Aliquid, recusandae animi nihil </p>
+                                    <i class="fas fa-chevron-right"></i>
+                                    <a href="#">Learn about Seminars</a>
+                                </div>
+                                <div class="card_workshop">
+                                    <h1>Request a consultation</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur delectus
+                                        magnam facilis. Aliquid, recusandae animi nihil </p>
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#">Request consultation</a>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            
+                            <!-- Learn Online Content -->
+                            
+                            <div id="learnOnline" class="tabcontent learn">
+                                <h1>Select a Category</h1>
+                                <div class="videoSection">
+                                    
+                                    <a target="_blank" href="https://www.google.com/">
+                                        
+                                        <div class="video">
+                                            <h3>Videos</h3>
+                                            <i class="fas fa-chevron-right"></i>
+                                            
+                                        </div>
+                                    </a>
+                                    <a target="_blank" href="https://www.google.com/">
+                                        
+                                        <div class="video">
+                                            <h3>Forms</h3>
+                                            <i class="fas fa-chevron-right"></i>
+                                            
+                                        </div>
+                                    </a>
+                                    <a target="_blank" href="https://www.google.com/">
+
+                                        <div class="video">
+                                            <h3>Publications</h3>
+                                            <i class="fas fa-chevron-right"></i>
+                                            
+                                        </div>
+                                    </a>
+                                    <a target="_blank" href="https://www.google.com/">
+                                        
+                                        <div class="video">
+                                            <h3>E-Learning</h3>
+                                            <i class="fas fa-chevron-right"></i>
+                                            
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <!-- Ask Expert Section -->
+                            <div id="askExpert" class="tabcontent faq">
+                                <div class="faqContainer">
+                        <div class="faqSection">
+                            <div class="faqImg">
+                                <img src="./images/Vector 1.png" alt="">
+                                <img src="./images/image 24.png" alt="">
+                                <img src="./images/Vector 2.png" alt="">
+                            </div>
+                            <h2>Frequently Ask Question</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            
+                            <button>Register for a workshop</button>
+                            
+                            
+                        </div>
+                        <div class="faqSection">
+                            <div class="faqImg">
+                                <img src="./images/Vector 1.png" alt="">
+                                <img src="./images/image 23.png" alt="">
+                                <img src="./images/Vector 2.png" alt="">
+                            </div>
+                            <h2>FAQS By Category</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi molestiae facilis
+                                reiciendis </p>
+                                
+                                <button>View Categorized FAQS</button>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <!-- Game -->
+                    <div id="game" class="tabcontent game">
+                        <div class="gameCard">
+                            <div class="gameHeader">
+                                <div class="knowledge">
+                                    <h4>Test Your Knowledge</h4>
+                                </div>
+                                <div class="img">
+                                    <img src="./images/Group 40.png" alt="">
+                                </div>
+                                <div class="knowledge">
+                                    <h4>Play With Freinds</h4>
+                                </div>
+                            </div>
+                        <div class="info_game">
+                            
+                            <h3><q>
+                                
+                                What is lorem ipsum dolor sitamet
+                                , consectetur recusandae animi molestiae facilis adipisicing elit?
+                            </q>
+                        </h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error eligendi cum vero adipisci,
+                        voluptatibus nam ab, numquam velit officia, perferendis consectetur? </p>
+                        
+                        <button>Play Game</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

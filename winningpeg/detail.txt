@@ -1,0 +1,6 @@
+1)firstly i add jquerry library
+2)then i design ui and  write code of jquerry
+3)then i fetch data and insert it into our date which comes from datePicker 
+4)print all data into popup page 
+5)some validation like if user enter without any date so i write alert which actually say that you insert date must
+6)close button in popup by closeBtn() function

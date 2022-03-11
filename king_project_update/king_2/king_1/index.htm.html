@@ -1,0 +1,232 @@
+<html lang="en">
+
+<head>
+
+    <title>iFix Phone Repair</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html {
+            height: 100%
+        }
+
+
+        h1,
+        div {
+
+            text-align: center;
+
+        }
+
+
+        div {
+
+            text-align: justify;
+
+        }
+
+
+        body {
+
+            margin: auto;
+
+            padding: 2%;
+
+            height: 100%;
+
+        }
+
+
+        .bigText {
+
+            color: black;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+
+        .smallText {
+
+            color: blue;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .div_smallText {
+            display: flex;
+            margin-top: 40px;
+
+
+        }
+
+        .div_smallText>img {
+            margin-top: -70px;
+        }
+
+        p {
+
+            font-size: 16px;
+            padding: 10px;
+        }
+        .div_bottom{
+            display: flex;
+            margin-top: -40px;
+        }
+        .div_bottom>.div_info{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+         margin-top: 190px;
+        }
+        .div_bottom>.div_info>p{
+            margin-left: -10px;
+        }
+        #personalizedMessage{
+            margin-top: -10px;
+        }
+        .display_div{
+            padding-bottom: 10px;
+            height: auto;
+            width: 100%;
+           
+        }
+
+        @media(max-width:750px) {
+            .div_smallText {
+                flex-direction: column;
+            }
+
+            .div_smallText>img {
+                margin-top: -100px;
+            }
+         
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+    <h1 class="bigText">Thank you for choosing iFix Phone Repair</h1>
+
+
+
+
+    <div class="left div_smallText smallText">
+
+        <p>
+            iFix Phone Repair is a phone repair store located in Arlington, TX.
+            Our team here at iFix are skilled and deliver quality services
+            to each and every one of our customers. We provide screen replacements,
+            button repair, speaker repair, battery replacements and many more services
+            to all of our customers. Our prices are never beat in other phone repair
+            stores in the market. We provide high-quality services that are affordable and
+            complete in a timely manner to meet consumer demands. Come on in our shop and
+            check out many different mobile phone gadgets and accessories that are available.
+            You can also ship your device to us and we'll deliver it back to you free of charge!
+            We also offer mobile repair for customers who are busy and like to get things done
+            on-the-go. If you are ever needing any mobile phone services, come check us out and
+            we'll take care of you!
+        </p>
+        <img src="./images/img2.png" alt="iPhoneRepair">
+
+    </div>
+
+
+    
+    <div class="left div_bottom smallText">
+        <img  src="./images/img1.png" alt="iPhoneRepair2" >
+        <div class="div_info">
+
+            <p> Want a more personalized experience on our Website? </p>
+            
+            <a href="#" id="personalizedMessage" onclick="readName()"> Please click here to provide your name</a>
+        </div>
+
+    </div>
+
+    <div class="left div_ smallText display_div">
+
+        <input type="button" onclick="generate()" value="Display">
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var existingUsername = getCookie("username");
+
+            if (existingUsername != "") {
+                displayWelcomeMessage(existingUsername);
+            }
+
+        });
+
+        var readName = function () {
+            var name = prompt("What's your name?");
+
+            var expiryDate = new Date();
+
+            expiryDate.setTime(expiryDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+
+            document.cookie = "username=" + name + ";" + expiryDate + ";path=/";
+
+            displayWelcomeMessage(name);
+        }
+
+        var displayWelcomeMessage = function (username) {
+            document.getElementById("personalizedMessage").innerHTML = "Welcome " + username + ". We hope you will enjoy your iFix Phone Repair experience!";
+        }
+
+        var getCookie = function (ckieName) {
+            var name = ckieName + "=";
+
+            var ckie = decodeURIComponent(document.cookie);
+
+            var tokens = ckie.split(";");
+
+            if (tokens.length == 1 && tokens[0] == "") return "";
+
+            for (i = 0; tokens != i < tokens.length; i++) {
+                var token = token[i];
+
+                while (token.charAt(0) == ' ') {
+                    token = token.substring(1);
+                }
+
+                if (token.indexOf(name) == 0) {
+                    return token.substring(name.length, token.length);
+                }
+            }
+
+            return "";
+        }
+
+
+        function generate() {
+            var rand = Math.random();
+            rand *= 10;
+            rand = Math.round(rand);
+            if (rand % 5 == 0) {
+                if (!alert("You have been randomly selected to participate in a customer satisfaction survey."))
+                    window.open("http://127.0.0.1:8887/survey.html");
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

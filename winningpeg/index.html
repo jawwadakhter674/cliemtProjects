@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winningpeg</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Jquerry links -->
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+  
+
+
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <div class="main_container">
+            <h2>Pothole Data from the city of winnipeg</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores excepturi vel, aliquid incidunt,
+                similique porro molestiae debitis a facilis assumenda error, possimus eaque fuga odio ullam maxime
+                pariatur quaerat sunt?</p>
+            <ul>
+                <li>Case Number</li>
+                <li>Case Description</li>
+            </ul>
+
+            <div class="datePicker">
+                <!-- Date picker from jquerry library -->
+                <p>Date: <input type="text" id="datepicker" size="30"></p>
+            </div>
+
+              <!--  Submit Button-->    
+            <button id="fetchData">Submit</button>
+
+        </div>
+    </div>
+
+
+
+
+
+
+<!--                                        POP_UP_VIEW                                             -->
+
+    <div class="popup-view" id="popup_view">
+        <div class="pop_main_container">
+
+            <div class="popup-card">
+                <div class="result_heading">
+                    <h3 id="result_heading"></h3>
+                    <button onclick="crossBtn()" id="closebtn"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="popup_container" id="dynamicData">
+
+               
+                </div>
+                <div class="popup_bottom">
+                    <button onclick="crossBtn()" id="cross_btn">ok</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+  
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

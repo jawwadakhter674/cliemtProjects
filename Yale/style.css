@@ -1,0 +1,101 @@
+.text-primary{
+    color: #F16334 !important
+}
+.bg-primary{
+    background: #F16334 !important
+}
+.navbar .nav-link{
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.intro{
+    background: #EFEFEF !important;
+    padding: 50px 0 
+}
+.school-news{
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+.school-news img{
+    height: 300px;
+    object-fit: cover;
+}
+footer{
+    background: #292929
+}
+.apply{
+    background: #EFEFEF;
+    padding: 80px 0 100px;
+}
+.news{
+    padding: 80px 0 ;
+}
+#iframe{
+    height: 900px
+}
+
+
+
+details {
+	font-size: 1rem;
+	margin: 6em auto;
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+		        0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	width: 100%;
+	background: #ffffff;
+	border-radius: 8px;
+	position: relative;
+	width: 500px;
+    transition: 1s ease-in-out !important;
+    
+}
+.summary-title {
+    user-select: none;
+}
+
+.summary-title:hover {
+    cursor: pointer;
+}
+
+.summary-content {
+    border-top: 1px solid #e2e8f0;
+    cursor: default;
+    padding: 1em;
+    font-weight: 300;
+    line-height: 1.5;
+    transition: 1s ease-in-out;
+}
+
+summary {
+    list-style: none;
+    padding: 1em;
+    color: #F16334;
+    font-weight: bold;
+    transition: 1s ease-in-out !important;
+    /* font-size: 20px; */
+}
+
+summary:focus {
+    outline: none;
+}
+
+
+.summary-chevron-up,
+.summary-chevron-down {
+    pointer-events: none;
+    position: absolute;
+    top: 0.75em;
+    right:1em;
+    background: #ffffff;
+
+}
+
+
+summary::-webkit-details-marker {
+    display: none;
+}

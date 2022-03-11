@@ -1,0 +1,154 @@
+
+.div_container{
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.drag_container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  min-height: 70vh;
+  border-radius: 20px;
+  padding: 10px;
+
+}
+.drag_container>h4{
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  font-size: 20px;
+}
+.draggable-items {
+  width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 100px;
+margin-bottom: 100px;
+
+}
+
+.draggable {
+  height: 1.7rem;
+  width: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0rem 0.5rem;
+  cursor: move;
+  transition: opacity 0.2s;
+}
+
+.draggable:hover {
+  opacity: 0.5;
+}
+
+.matching-pairs {
+  transition: opacity 0.5s;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.matching-pair {
+  height: 6rem; 
+ margin-left:20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column-reverse;
+
+
+}
+
+.matching-pair span {
+  height: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.label {
+
+  font-size: 16px;
+}
+
+.droppable {
+  width: 6rem;
+  font-size: 4rem;
+  background-color: rgb(224, 224, 224);
+  border: 3px dashed rgb(34, 34, 105);
+  transition: 0.2s;
+  /* height: 5rem; */
+}
+
+.droppable-hover {
+  background-color: #bee3f0;
+  transform: scale(1.1);
+}
+
+.dropped {
+  border-style: solid;
+}
+
+.dragged {
+  user-select: none;
+  opacity: 0.1;
+  cursor: default;
+}
+
+.draggable.dragged:hover {
+  opacity: 0.1;
+}
+
+.drag_next{
+position: absolute;
+right: 20px;
+bottom: 10px;
+}
+@media (max-width: 600px) {
+  .drag_container{
+    height: auto;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .drag_container>h4{
+    font-size: 17px;
+  }
+  .drag_next{
+    position: absolute;
+    right: 30%;
+    bottom: 0;
+    
+  
+    }
+    .draggable{
+      width: 10px;
+      height: 2rem;
+    margin: 0 0.2rem;
+    font-size: 2.5rem;
+   
+    }
+    .draggable-items{
+      width: 100%;
+    }
+    .matching-pairs{
+      height: auto;
+      margin-bottom: 30px;
+    }
+}

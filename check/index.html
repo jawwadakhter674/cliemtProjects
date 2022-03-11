@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    .collapsible {
+
+background:#007AC3; 
+border: none; 
+color: #fff;
+cursor: pointer;
+font-family: 'Fira Sans', Helvetica, Arial, sans-serif !important;
+font-size: 16px;
+font-weight: 200 !important;
+margin-left: 40px;
+padding: 16px;
+text-align: left;
+text-decoration: none;
+text-transform:uppercase !important;
+outline: none;
+width: 80%;
+   
+}
+
+/* Style the collapsible content. Note: hidden by default */
+
+.content {
+font-size:16px;font-family: 'Fira Sans', Helvetica, Arial, sans-serif !important;
+font-weight: 200 !important;
+line-height:1.5; 
+margin-left: 40px;
+max-height: 0px;
+overflow: hidden;
+padding: 16px;
+transition:  max-height 0.2s ease-out;
+width: 80%;
+}
+
+.collapsible.active{
+font-weight:400 !important;
+}
+
+.collapsible:before {
+  /*content: '\0002B'; /* Unicode character for "plus" sign (+) */
+
+color: rgb(255, 255, 255) !important;
+content: "+ READ MORE";
+font-weight: 200 !important;
+float:right;
+text-align: right;
+text-transform:uppercase !important;
+width:20%;
+  
+}
+.active:before {
+  /* content: ""; /* Unicode character for "minus" sign (-) */
+
+color: rgb(255, 255, 255) !important;
+content: "- READ LESS";
+font-weight: 200 !important;
+float:right;
+text-align: right;
+text-transform:uppercase !important;
+width:20%;
+
+}
+
+</style>
+<body>
+    
+    <button class="collapsible">TITLE<p style="margin-bottom: -10px; color:#fff; line-height: 1.5; text-transform: none;">DESCRIPTION</p> </button>
+
+<div class="content">
+<p>CONTENT</p>
+
+
+
+  <script>
+     
+     fetch(`https://data.winnipeg.ca/resource/6rcy-9uik.json?$where=:created_at < '2017-11-15T03:00:00.000Z'`)
+     .then(response => response.json())
+     .then(json =>{
+       for (let i =990; i < json.length; i++) {
+         const element = json[i];
+         console.log(element)
+         
+        }
+      })
+      //  fetch(`https://data.winnipeg.ca/resource/6rcy-9uik.json?$where=date between '2015-01-10T12:00:00' and '2015-01-10T14:00:00'`)
+  
+  
+      //  fetch(`https://data.winnipeg.ca/resource/6rcy-9uik.json?$select=to_floating_timestamp('2017-12-13T12:34:55').day`)
+      //  fetch(`https://data.winnipeg.ca/resource/6rcy-9uik.json?$select=date_extract_d(date)%20as%20day,%20primary_type,%20count(*)&$group=day,%20primary_type`)
+      //  fetch(`https://data.winnipeg.ca/resource/6rcy-9uik.json?$where=to_floating_timestamp('2017-12-13T12:34:55').day`)
+  
+  
+  
+  </script>
+ 
+    
+</body>
+</html>

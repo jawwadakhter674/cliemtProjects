@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page__1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="main__page1">
+        <div class="container__center">
+            <div class="tabs">
+                <div class="tabs_header">
+                    <div class="active">Home</div>
+                    <div>About</div>
+                    <div>Info</div>
+                    <div>Value</div>
+                </div>
+                <div class="tab_body">
+                    <div class="active">
+                        <h2>Home</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt expedita quidem dicta veritatis quia fugit quod illum temporibus corrupti quaerat mollitia necessitatibus fugiat, tempore vel doloribus minima ducimus architecto.</p>
+                        
+                    </div>
+                    <div>
+                        <h2>About</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt expedita quidem dicta veritatis quia fugit quod illum temporibus corrupti quaerat mollitia necessitatibus fugiat, tempore vel doloribus minima ducimus architecto.</p>
+
+                    </div>
+                    <div>
+                        <h2>Info</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt expedita quidem dicta veritatis quia fugit quod illum temporibus corrupti quaerat mollitia necessitatibus fugiat, tempore vel doloribus minima ducimus architecto.</p>
+
+                    </div>
+                    <div>
+                        <h2>Value</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam deserunt expedita quidem dicta veritatis quia fugit quod illum temporibus corrupti quaerat mollitia necessitatibus fugiat, tempore vel doloribus minima ducimus architecto.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        let tabs = document.querySelector(".tabs")
+        let tabHeader=document.querySelector(".tab_header")
+        let tabBody = document.querySelector("tab_body")
+        let tabHeaders = document.querySelectorAll("div")
+
+        for (let i =0; i<tabHeaders.length; i++){
+            tabHeaders[i].addEventListener("click",()=>{
+                tabHeader.querySelector(".active").classList.remove("active")
+                tabHeaders[i].classList.add("active")
+                tabBody.style.marginTop=""
+            })
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+:root {
+  --color-primary: #f23557;
+  --color-secondary: #383761;
+  --color-accent: rgb(240, 212, 58);
+  --color-dark: #000;
+  --color-light: #fff;
+}
+
+
+
+body {
+  
+
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; 
+  background-color: rgb(245, 245, 245);
+}
+nav{
+  background-color: rgb(23, 23, 114);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+nav>a{
+  margin-left: 30px;
+  color: #fff;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.app_container {
+ 
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 90vh;
+}
+
+#app {
+width: 50%;
+background-color: #fff;
+box-shadow: 10px 13px 5px -1px rgba(214,214,214,0.75);
+-webkit-box-shadow: 10px 13px 5px -1px rgba(214,214,214,0.75);
+-moz-box-shadow: 10px 13px 5px -1px rgba(214,214,214,0.75);
+border-radius: 20px;
+height: auto;
+padding-bottom: 20px;
+}
+
+.div_heading {
+width: 100%;
+
+}
+
+.heading {
+text-transform: uppercase;
+font-size: 30px;
+font-weight: bold;
+color: #333;
+text-align: center;
+}
+
+
+.form_data {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100%;
+}
+
+/* ZIP & feelings input */
+.holder{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.holder>input{
+  width: 70%;
+  height: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  outline: none;
+  border: 1px solid grey;
+}
+
+
+/* Button Generate */
+
+.submit_btn{
+border: none;
+outline: none;
+width: 200px;
+height: 40px;
+border-radius: 5px;
+letter-spacing: 0.8px;
+color: #fff;
+background-color: rgb(23, 23, 114);
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+
+/*recent entry styling */
+
+.entry {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.entry__title {
+color: rgb(23, 23, 114);
+font-weight: bold;
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.entry_main{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 18px;
+
+}
+.entry__date,
+.entry__temp,
+.entry__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10px;
+  margin-top: 20px;
+  color: rgb(23, 23, 114);
+}
+
+.entry__icon{
+  margin-right: 10px;
+  opacity: 0;
+
+}
+.fa-thermometer-half{
+  color: orangered;
+}
+.fa-user{
+  color: green;
+}
+@media(max-width:770px){
+  #app{
+    width: 90%;
+  }
+  .heading{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .entry__title{
+    font-size: 25px;
+  }
+  .submit_btn{
+    width: 140px;
+  }
+}
+

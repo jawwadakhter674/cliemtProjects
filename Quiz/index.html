@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Ask Me.</a>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <!-- title of page -->
+            <h3  class="title" id="title"></h3>
+            <!-- Text -->
+            <p id="user_question"></p>
+
+            <!-- Image -->
+            <div class="image_container">
+                <img id="image_url" src="" alt="" class="image">
+            </div>
+
+
+            <!-- Answer button -->
+            <div class="answer_feild">
+                <div class="input_feild">
+                    <input type="text" id="answer_feild" placeholder="Enter Your Answer">
+                </div>
+                <button id="answer" class="submit_button">Submit <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <p class="text_feild" id="text_feild"></p>
+        </div>
+      
+    </div>
+
+
+
+    <div class="popup-view" id="popup_view">
+        <div class="popup-card">
+            <!-- <a href="#"  onclick="closeButton()" id="close_btn" class="close-btn" >&times;</a> -->
+         
+            <div class="info">
+                <h2 id="popup_heading"><br></h2>
+               <button id="try_again">ok</button>
+
+            </div>
+        </div> 
+    </div>  
+
+
+    
+    
+    
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

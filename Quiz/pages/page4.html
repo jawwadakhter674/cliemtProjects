@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me</title>
+    <link rel="stylesheet" href="./../Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Ask Me.</a>
+    </nav>
+
+    <div class="main">
+        <div class="container">
+              <!-- title of page -->
+              <h3  class="title" id="title"></h3>
+            <!-- Text -->
+            <p id="user_question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolores ut, velit aliquam ratione
+                ab dolore ea ipsam tempore. Asperiores nihil veri.?</p>
+
+            <!-- Image -->
+            <div class="image_container">
+                <img id="image_url" src="" alt="" class="image">
+            </div>
+
+           
+
+            <!-- Answer button -->
+            <div class="answer_feild">
+                <div class="input_feild">
+                    <input type="text" id="answer_feild" placeholder="Enter Your Answer">
+                </div>
+                <button id="answer" class="submit_button">Submit <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <p class="text_feild" id="text_feild"></p>
+        </div>
+      
+    </div>
+
+
+
+    <div class="popup-view" id="popup_view">
+        <div class="popup-card">
+            <!-- <a href="#"  onclick="closeButton()" id="close_btn" class="close-btn" >&times;</a> -->
+         
+            <div class="info">
+                <h2 id="popup_heading"><br></h2>
+               <button id="try_again">ok</button>
+
+            </div>
+        </div> 
+    </div>  
+
+
+    <script>
+        const jsonData = [
+    {
+        imageUrl: "https://bs-uploads.toptal.io/blackfish-uploads/components/blog_post_page/content/cover_image_file/cover_image/686515/01-HTML5_CM-8384522cf54d2bf230364f4a290605a1.png",
+        answer: "html",
+        question:"HTML is the language for describing the structure of Web pages. HTML gives authors the means to: Publish online documents with headings",
+        text2:"The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.",
+title:"Hyper text markup"
+
+
+},
+{
+    imageUrl: "https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg",
+    answer: "cascading stylesheet",
+    question:'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. ',
+    text2:"Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML",
+    title:"cascading stylesheet"
+
+    },
+    {
+        imageUrl: "https://www.pragimtech.com/wp-content/uploads/2019/03/java-script.jpg",
+        answer: "javascript",
+        question:"avaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. ",
+        text2:"JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification. JavaScript is high-level",
+    title:"javascript"
+    },
+
+]
+
+// Global variable
+const title= document.getElementById('title')
+const image_url = document.getElementById('image_url')
+const question = document.getElementById('user_question')
+const answer_feild = document.getElementById('answer_feild')
+const answer = document.getElementById('answer')
+const popup_view = document.getElementById('popup_view')
+const try_again = document.getElementById('try_again')
+const text_feild = document.getElementById('text_feild')
+const data_length = jsonData.length - 1
+
+
+
+window.addEventListener("load", () => {
+    const data = jsonData[Math.round(Math.random() * data_length)]
+    image_url.src = data.imageUrl
+    question.innerHTML=data.question
+    title.innerHTML=data.title
+    text_feild.innerHTML=data.text2
+    // onClick Event in answer button
+    answer.addEventListener("click", () => {
+        const user_answer = answer_feild.value
+        if (user_answer) {
+            if (user_answer.toUpperCase() === data.answer.toUpperCase()) {
+                window.location.href = './../pages/page4a.html'
+                answer_feild.value=""
+            }
+            else {
+                document.getElementById('popup_heading').innerHTML="Try Again"
+                popup_view.style.display='block'
+                answer_feild.value = ""
+            }
+
+        }
+        else {
+           document.getElementById('popup_heading').innerHTML="Please Select One Answer"
+           popup_view.style.display='block'
+        }
+
+    })
+
+
+})
+
+
+
+try_again.addEventListener('click', (e) => {
+    popup_view.style.display = "none"
+})
+
+    </script>
+
+
+
+</body>
+
+</html>

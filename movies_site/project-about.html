@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Final Project Home Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="./css/css-project.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="row header">
+            <h1>Chris's Reviews</h1>
+            <div class="topnav">
+                <a class="nav-links" href="./project-home.html">Home</a>
+                <a class="nav-links" href="#">About</a>
+                <a class="nav-links" href="./project-category.html">Category</a>
+                <a class="nav-links" href="./project-article.html">Article</a>
+                <input class="header-search-bar" type="text" placeholder="Search..">
+            </div>
+        </header>
+        <nav class="row nav">
+            <ul>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">K-Dramas</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Books/Manga</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="about_container">
+        <div class="aside">
+            <h3>Side Content Heading</h3>
+            <div class="img_section">
+                <div class="img">
+                    <img src="https://via.placeholder.com/150x150" alt="dummy image from placeholder.com">
+                </div>
+            </div>
+            <p>The image above is centered and round because I use display: block and margin: 0 auto along with
+                border-radiuis: 50%. Images are normally inline elements and can't be centered with margin since it
+                doesn't have a width. Once we display it as a block level element, it gets a width and can be centered
+                with the margin. </p>
+
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input id="name" placeholder="Enter Your Name" type="text">
+                    <label for="email">Email:</label>
+                    <input autocomplete="false" id="email" placeholder="Enter Your Email" type="text">
+                    <label for="message">Message:</label>
+                    <textarea id="message" placeholder="Enter Your Message Here.."></textarea>
+                    <button type="button">Submit Info</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="main">
+            <h1>Main Conent Heading</h1>
+            <p>Right-click this page and view the source of it. After viewing the source, look for the link tag in the
+                head of the HTML. Click on the link for the CSS file and you'll find more information related to the
+                styles on this page and how they were added. This page is just a basic demonstration of how CSS can be
+                applied to add styles to a page. It has two columns of content along with some floated items throughout
+                the page. It also demonstrates how to center items and use padding/margin to provide spacing between
+                elements.</p>
+            <div class="row">
+                <img src="https://via.placeholder.com/150x150" alt="dummy image from placeholder.com">
+                <p>The image to the left of this paragraph has been floated. Since it's floated, the text here will flow
+                    around it. Being that this content is in a div with a class of "row", it won't move up or down. I've
+                    added margin to the right of the image to give it space from the text. This div has been given
+                    padding to allow there to be space between the content and the edge of our container. </p>
+            </div>
+            <p>The "Contact Us" div inside of the div with a class of aside (to the left of this paragraph) has been
+                given a border to wrap all of the content. I've given the h3 no margin so that it is right against the
+                container. The form is right against the container and I gave it some padding so that the form elements
+                weren't against the edge of the container. Each input has a bottom margin to provide space betwen
+                inputs. Lastly, the entire contact div is give margin on the bottom so that there is space between it
+                and the footer.</p>
+        </div>
+    </div>
+
+<!--                   Footer                  -->
+<br>
+<br>
+<br>
+<br>
+<center>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Contact us</a>
+                <a href="#">Blogs</a>
+            </div>
+        </div>
+    </footer>
+</center>
+
+</body>
+
+</html>
